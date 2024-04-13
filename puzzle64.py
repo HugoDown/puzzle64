@@ -29,8 +29,8 @@ except ImportError:
     import requests
 
 def work():
-    low  = 0x8000000000000000
-    high = 0xffffffffffffffff
+    low  = 0x40000000000000000
+    high = 0x7ffffffffffffffff
     return str ( hex ( random.randrange( low, high ) ) )[2:]
     
 #Number of zeros to be added
